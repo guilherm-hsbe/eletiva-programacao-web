@@ -18,3 +18,10 @@ php artisan serve
 
 -Entrar endereço web - chechar se funciona
 -Instalar plugins Composer e Laravel - VSCode
+
+----------------------------------
+-Para cada aula:
+	-Instalar composer (.exe)
+	-Abrir Apache/VSCode
+	-Comando terminal VSCode
+----------------------------------
