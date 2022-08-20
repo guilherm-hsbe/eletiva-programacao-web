@@ -17,3 +17,4 @@ composer create-project laravel/laravel
 php artisan serve
 
 -Entrar endereço web - chechar se funciona
+-Instalar plugins Composer e Laravel - VSCode
