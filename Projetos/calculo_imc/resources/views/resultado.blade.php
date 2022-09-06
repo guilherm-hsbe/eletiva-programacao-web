@@ -13,7 +13,7 @@
 
         <div class="border border-1 border-secondary rounded border-opacity-25 p-2">
             <table class="table table-hover text-center">
-                <caption class="fw-normal mt-2">SEU IMC: <b class="fw-bolder">{{$val[0][0]}}</b> <b class="fw-bolder">({{$val[0][1]}})</b></caption>
+                <caption class="fw-normal mt-2">SEU IMC: <b class="fw-bolder">{{$val[0][0]}} ({{$val[0][1]}})</b></caption>
 
                 <thead class="table-secondary"> 
                     <tr>
