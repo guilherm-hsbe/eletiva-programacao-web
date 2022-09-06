@@ -14,7 +14,7 @@ class ImcController extends Controller
     public function imc() {
         $calculodeIMC = new CalculodeIMC();
 
-        $val = $calculodeIMC->calcularimc();
+        $val = [$calculodeIMC->calcularimc()];
 
         return view('resultado', ['val'=>$val]);
     }

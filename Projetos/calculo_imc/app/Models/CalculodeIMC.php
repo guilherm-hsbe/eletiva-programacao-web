@@ -11,33 +11,31 @@ class CalculodeIMC extends Model
         $altura = $_GET['altura'];
         $peso = $_GET['peso'];
 
-        $imc_valor = $peso/($altura*$altura);
-        $imc_class = "";
+        $imc_valor = number_format($peso/($altura*$altura), 2, '.', '');
+        $imc_class = "";    
 
         //Classificação: Magreza
         if ($imc_valor < 18.5){
             $imc_class = "MAGREZA";
-            return $imc_class;
         }
 
         elseif ($imc_valor >= 18.5 && $imc_valor <= 24.9){
             $imc_class = "NORMAL";
-            return $imc_class;
         }
 
         elseif ($imc_valor >= 25.0 && $imc_valor <= 29.9){
-            $imc_class = "SOBREPESO (OBESIDADE: GRAU I)";
-            return $imc_class;
+            $imc_class = "SOBREPESO - GRAU I";
         }
 
         elseif ($imc_valor >= 30.0 && $imc_valor <= 39.9){
-            $imc_class = "OBESIDADE (OBESIDADE: GRAU II)";
-            return $imc_class;
+            $imc_class = "OBESIDADE - GRAU II";
         }
 
         else{
-            $imc_class = "OBESIDADE GRAVE (OBESIDADE: GRAU III)";
-            return $imc_class;
+            $imc_class = "OBESIDADE GRAVE - GRAU III";
         }
+
+        $array = [$imc_valor,$imc_class];
+        return $array;
     } 
 }
