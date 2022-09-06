@@ -92,3 +92,8 @@ mix
 
 -Criar pasta "images" em "resources"
 -Criar arquivo "style.css" em "css"
+
+Para casa
+remover maioria do conetudo
+deixar apenas o menu e footer
+ @yield('content')
