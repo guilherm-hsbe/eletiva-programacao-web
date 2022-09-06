@@ -34,8 +34,8 @@ html (selecionar preset "html:5")
 -No CMD - pasta do projeto
 node -v (checar versão)
 npm install
-npm run dev
-npm install laravel-mix --save-dev (processo do laravel. Rodar após criar ou modificar arquivos "package.json", "webpack.mix.js", pasta "images" e arquivo "style.css"
+npm run dev (processo laravel. Rodar após alterações nos "style.css")
+npm install laravel-mix --save-dev (processo laravel. Rodar após criar ou modificar arquivos "package.json", "webpack.mix.js", pasta "images" e arquivo "style.css"
 
 	Rotina
 -Abrir Apache
@@ -43,7 +43,8 @@ npm install laravel-mix --save-dev (processo do laravel. Rodar após criar ou mo
 -No VsCode, abrir terminal: php artisan serve
 -Entrar endereço web - chechar funcionalidade
 -Ao abrir projeto do GitHub, rodar cmd: php artisan key:generate
--#Ou ao abrir projeto sem pasta "vendor", rodar cmd: composer update
+#ou
+-Ao abrir projeto sem pasta "vendor", rodar cmd: composer update
 
 	Laravel
 -Modificação arquivo "package.json":
