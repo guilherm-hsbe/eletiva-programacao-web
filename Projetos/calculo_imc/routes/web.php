@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\IMCController@index');
+Route::get('/', 'App\Http\Controllers\ImcController@index');
 
-Route::get('/imc', 'App\Http\Controllers\IMCController@imc');
+Route::get('/imc', 'App\Http\Controllers\ImcController@imc');
 

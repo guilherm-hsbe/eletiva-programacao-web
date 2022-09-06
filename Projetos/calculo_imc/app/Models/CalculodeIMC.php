@@ -7,27 +7,37 @@ use Illuminate\Database\Eloquent\Model;
 
 class CalculodeIMC extends Model
 {
-    public function calcular() {
+    public function calcularimc() {
         $altura = $_GET['altura'];
         $peso = $_GET['peso'];
 
-        $imc_valor = $peso/$altura;
+        $imc_valor = $peso/($altura*$altura);
         $imc_class = "";
 
         //Classificação: Magreza
-        if ($imc_valor < 18.5)
-        return $imc_class = "MAGREZA";
+        if ($imc_valor < 18.5){
+            $imc_class = "MAGREZA";
+            return $imc_class;
+        }
 
-        elseif ($imc_valor >= 18.5 && $imc_valor <= 24.9)
-            echo "NORMAL";
+        elseif ($imc_valor >= 18.5 && $imc_valor <= 24.9){
+            $imc_class = "NORMAL";
+            return $imc_class;
+        }
 
-        elseif ($imc_valor >= 25.0 && $imc_valor <= 29.9)
-            echo "SOBREPESO (OBESIDADE: GRAU I)";
+        elseif ($imc_valor >= 25.0 && $imc_valor <= 29.9){
+            $imc_class = "SOBREPESO (OBESIDADE: GRAU I)";
+            return $imc_class;
+        }
 
-        elseif ($imc_valor >= 30.0 && $imc_valor <= 39.9)
-            echo "OBESIDADE (OBESIDADE: GRAU II)";
+        elseif ($imc_valor >= 30.0 && $imc_valor <= 39.9){
+            $imc_class = "OBESIDADE (OBESIDADE: GRAU II)";
+            return $imc_class;
+        }
 
-        else
-            echo "OBESIDADE GRAVE (OBESIDADE: GRAU III)";
+        else{
+            $imc_class = "OBESIDADE GRAVE (OBESIDADE: GRAU III)";
+            return $imc_class;
+        }
     } 
 }

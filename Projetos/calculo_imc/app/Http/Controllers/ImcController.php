@@ -8,13 +8,13 @@ use Illuminate\Http\Request;
 class ImcController extends Controller
 {
     public function index() {
-        return view('imc');
+        return view('formulario');
     }
 
-    public function calculo() {
+    public function imc() {
         $calculodeIMC = new CalculodeIMC();
 
-        $val = $calculodeIMC->calcular();
+        $val = $calculodeIMC->calcularimc();
 
         return view('resultado', ['val'=>$val]);
     }
