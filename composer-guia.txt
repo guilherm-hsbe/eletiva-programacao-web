@@ -46,6 +46,12 @@ npm install laravel-mix --save-dev (processo laravel. Rodar após criar ou modif
 #ou
 -Ao abrir projeto sem pasta "vendor", rodar cmd: composer update
 
+	GitHub (arquivo "gitignore" ignorando pastas) (dirário) 
+Retomar pasta vendr: composer update
+Retomar pasra env:
+-clonar pasta ".env.example" e renomear ".env"
+-no cmd: php artisan key:generate (gerar chave)
+
 	Laravel
 -Modificação arquivo "package.json":
 {
@@ -101,3 +107,9 @@ deixar apenas o menu e footer
 repetir em cursos e contatos (com formularios)
 contatos com nome email e mensagem
 cursos com apenas nome
+
+------------------------------------------------------------------------------------
+
+
+
+
