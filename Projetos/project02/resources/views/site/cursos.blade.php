@@ -6,7 +6,7 @@
   <h1 class="display-4">Cursos</h1>
   <hr class="my-4">
   <p class="lead">Conheça os cursos disponíveis em nossa plataforma.</p>
-</div>
+</div><!-- /.jumbotron -->
 
 <div class="container">
   <!-- START THE FEATURETTES -->
@@ -22,7 +22,7 @@
           <img src="{{ asset('images/img-curso-laravel.png') }}" class="figure-img img-fluid rounded" alt="Curso Laravel">
       </figure>
     </div>
-  </div>
+  </div><!-- /.featurette -->
 
   <hr class="featurette-divider">
 
@@ -37,7 +37,7 @@
           <img src="{{ asset('images/im-curso-php.png') }}" class="figure-img img-fluid rounded" alt="Curso PHP">
       </figure>
     </div>
-  </div>
+  </div><!-- /.featurette -->
 
   <hr class="featurette-divider">
 
@@ -52,8 +52,10 @@
           <img src="{{ asset('images/img-curso-python.jpg') }}" class="figure-img img-fluid rounded" alt="Curso Laravel">
       </figure>
     </div>
-  </div>
-    <!-- /END THE FEATURETTES -->
-</div>
+  </div><!-- /.featurette -->
+
+  <!-- /END THE FEATURETTES -->
+
+</div><!-- /.container -->
 
 @endsection

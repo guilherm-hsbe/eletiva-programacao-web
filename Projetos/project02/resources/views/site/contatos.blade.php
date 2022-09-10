@@ -32,8 +32,9 @@
       <textarea class="form-control" id="mensagemContato" name="mensagemContato" rows="3"></textarea>
       <button type="submit" class="btn btn-primary mb-2 mt-3" value="Enviar">Enviar</button>
     </div>
+    
   </form>
-</div>
+</div><!-- /.container -->
 
 <!--Apresentar-->
 <hr>
