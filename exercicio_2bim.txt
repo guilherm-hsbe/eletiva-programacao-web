@@ -1,0 +1,42 @@
+Projeto-----------
+
+*Tabelas
+
+Categorias
+-id
+-descricao
+
+Fornecedores
+-id
+-nome
+-telefone
+-logradouro
+-cep
+-cidade
+-estado
+-razao_social
+
+Produtos (relação chaves-estrangeiras: categorias,fornecedor)
+-id
+-nome
+-descricao
+-preco (original-estoque)
+-quantidade (estoque)
+-id_categoria
+-id_fornecedor
+
+ComprasProdutos (relação N:N - Produtos/Compras)
+-id
+-id_produto
+-id_compra
+-quantidade (compra)
+-preco (atual-compra)
+
+Compras
+-id
+-status (aberta/finalizada)
+
+-----
+Próxima aula 25/10
+-Preparar Controllers Managers  e Views das CRUDS
+-Detalhe para CRUDS com chaves estrangeiras (pesquisar)

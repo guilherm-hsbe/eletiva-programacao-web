@@ -1,0 +1,47 @@
+-criar migration
+(criar tabela cursos através de cruso)
+php artisan make:migration create_cursos_table --create=cursos
+
+-no arquivo criado database/migrations
+(substituir no Schema atual)
+Schema::create('cursos', function (Blueprint $table) {
+            $table->id();
+            $table->string('nome');
+            $table->text('descricao');
+            $table->string('imagem');
+            $table->timestamps();
+});
+
+-em rotas
+(rota para gerenciamento dos cursos)
+Route::resource('cursosmanager', CursoManagerController::class);
+
+-cmd
+(criação do controler gerenciador dos procedimentos do banco de dados)
+php artisan make:controller CursoManagerController --resource --model=Curso
+
+|------------------------------------------------|
+
+-adição no model criado
+protected $fillable = [
+        'nome',
+        'descricao',
+        'imagem',
+];
+
+-adição em "public function index" do "cusomanagercontroller"
+public function index()
+    {
+        $cursos = Curso::latest()->paginate(5);
+
+        return view('cursosmanager/index',compact('cursos'))
+            ->with('i', (request()->input('page, 1') - 1) * 5);
+    }
+
+|------------------------------------------------|
+
+-criação da pasta "cursosmanager" em views com:
+   -index.blade.php
+   -edit.blade.php
+   -create.blade.php
+   -show.blade.php

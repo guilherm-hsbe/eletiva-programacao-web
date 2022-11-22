@@ -1,0 +1,44 @@
+	Softwares
+-Composer
+-Node.js
+-Laravel ()
+-Apache (XAMP,WAMP...)
+-Visual Code (softwares e plugins: Composer, Laravel)
+
+	Comando terminal (instalar composer manual):
+php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611085589f1f3ddf8b3c52d662cd01d4ba75c0ee0459970c2200a51f492d557530c71c15d8dba01eae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+php composer-setup.php
+php -r "unlink('composer-setup.php');"
+
+	Criar projeto
+-Entrar pasta projeto
+-Clique direito + shift: abrir no shell:
+#ou
+-Utilizando cmd (apenas navegar entre pastas)
+composer create-project laravel/laravel
+composer create-project --prefer-dist laravel/laravel projeto v7.* (especificar prefer-dist para versão específica)
+
+	Criar Controller/Model/View
+-Entrar pasta projeto
+php artisan make:controller NomeController
+php artisan make:model NomeModel
+-Gerar view com extensão ".blade.php"
+
+	Gerar modelo HTML
+-No arquivo:
+html (selecionar preset "html:5")
+
+	Processo node
+-No CMD - pasta do projeto
+node -v (checar versão)
+npm install
+npm run dev
+
+	Rotina
+-Abrir Apache
+-Abrir VsCode
+-No VsCode, abrir terminal: php artisan serve
+-Entrar endereço web - chechar se funciona
+-Instalar plugins Composer e Laravel - VSCode
+
